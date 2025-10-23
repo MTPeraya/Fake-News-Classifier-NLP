@@ -1,0 +1,17 @@
+# Ignore data files (keep raw data locally, commit only small processed files)
+data/*.csv
+data/*.xlsx
+data/raw/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore large model files
+*.pkl
+*.h5
+*.joblib
+*.pth
+
+# Ignore Python specific files
+__pycache__/
+venv/
