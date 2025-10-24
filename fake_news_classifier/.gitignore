@@ -1,9 +1,3 @@
-# Ignore data files (keep raw data locally, commit only small processed files)
-data/*.csv
-data/*.xlsx
-data/raw/
-data/processed/cleaned_news_data.csv
-
 # Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
