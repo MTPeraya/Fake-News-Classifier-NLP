@@ -76,3 +76,26 @@ This will run multiple sample headlines and output the model's prediction (Fake 
 | `predict.py` | Standalone Python script to load the model and make real-time predictions on new input text. |
 | `README.md` | This document. |
 
+## Findings
+- The model performs near-perfectly on the dataset it was trained and tested on.
+
+- However, when evaluated on new, unseen modern headlines, predictions are heavily biased toward the “Fake” label.
+
+This bias is due to:
+- Limited vocabulary coverage
+
+- TF-IDF cannot interpret unseen words.
+
+- Dataset bias — fake examples often contain exaggerated, emotional, or outdated language.
+
+### Conclusion
+The model is technically robust within its dataset but lacks generalization to modern or out-of-distribution news.
+
+The issue is not a coding error, but a natural limitation of TF-IDF + traditional ML when faced with evolving language.
+
+### Next Steps in the future
+- Expand training data with diverse, recent, and balanced real/fake news.
+
+- Increase TF-IDF coverage or switch to a transformer-based model (e.g., BERT) for contextual understanding.
+
+- Re-evaluate model on unseen samples to monitor real-world reliability.

@@ -81,8 +81,11 @@ if __name__ == "__main__":
         
         # Neutral / tech & science
         "Apple announces iPhone 17 with new AI-powered camera features.",
-        "Researchers publish study on the effects of sleep on cognitive function."
-    ]
+        "Researchers publish study on the effects of sleep on cognitive function.",
+
+        # In data
+        "As U.S. budget fight looms, Republicans flip their fiscal script WASHINGTON (Reuters)"
+        ]
 
 
     print("\n=======================================================")
