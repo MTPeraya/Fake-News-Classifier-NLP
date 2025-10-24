@@ -2,6 +2,7 @@
 data/*.csv
 data/*.xlsx
 data/raw/
+data/processed/cleaned_news_data.csv
 
 # Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
@@ -15,3 +16,4 @@ data/raw/
 # Ignore Python specific files
 __pycache__/
 venv/
+
