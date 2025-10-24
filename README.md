@@ -52,6 +52,20 @@ Install the necessary libraries using the `requirements.txt` file:
 pip install -r requirements.txt
 ```
 
+### Run the Final Model for a Prediction
+The trained model and vectorizer are saved as .joblib files in the models/ directory. You can test the model instantly using the predict.py script.
+To run the model, you MUST execute the script from the project root directory:
+Navigate to the root directory (the folder containing 'predict.py' and 'src/')
+cd path/to/Fake-News-Classifier-NLP/
+
+Run the prediction script
+```bash
+python predict.py
+```
+
+This will run multiple sample headlines and output the model's prediction (Fake or Real) and its certainty score.
+
+
 ### Repository Structure
 
 | Folder/File | Description |
@@ -59,11 +73,6 @@ pip install -r requirements.txt
 | `data/` | Stores the raw and cleaned CSV files. **(Ignored from Git)** |
 | `notebooks/` | Contains the **Jupyter Notebooks** detailing the analysis steps. |
 | `src/` | Holds reusable Python scripts and helper functions (e.g., `text_cleaner.py`). |
-| `.gitignore` | Prevents large model files and raw data from being committed to Git. |
+| `predict.py` | Standalone Python script to load the model and make real-time predictions on new input text. |
 | `README.md` | This document. |
 
-## 4\. Key Takeaways
-
-1.  **Linguistic Markers Matter:** The model learned to classify based not only on *what* was said, but *how* it was said (e.g., heavy reliance on emotional words and excessive punctuation in fake articles).
-2.  **Vectorization is King:** The performance of the final model was highly dependent on the quality of the **TF-IDF** vectorization parameters.
-3.  **Actionable Insight:** The final model can be deployed as an API endpoint to score the probability of any new, unseen article being fake, providing a valuable tool for content moderation.
