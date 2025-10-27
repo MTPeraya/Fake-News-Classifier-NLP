@@ -56,7 +56,8 @@ pip install -r requirements.txt
 The trained model and vectorizer are saved as .joblib files in the models/ directory. You can test the model instantly using the predict.py script.
 To run the model, you MUST execute the script from the project root directory:
 Navigate to the root directory (the folder containing 'predict.py' and 'src/')
-cd path/to/Fake-News-Classifier-NLP/
+
+cd path/to/Fake-News-Classifier-NLP/fake_news_classifier/
 
 Run the prediction script
 ```bash
